@@ -1,0 +1,26 @@
+<h3>Log In</h3>
+
+<form [formGroup]="LoginForm" (ngSubmit)="LoginUser()">
+  <div>
+    <label for="email-login">Email:</label>
+    <input
+      type="email"
+      placeholder="email"
+      id="email-login"
+      formControlName="email"
+    />
+  </div>
+  <div>
+    <label for="password-login">Password:</label>
+    <input
+      type="password"
+      placeholder="password"
+      id="password-login"
+      formControlName="password"
+    />
+  </div>
+
+  <button type="submit" [disabled]="LoginForm.status === 'INVALID'">
+    Login
+  </button>
+</form>

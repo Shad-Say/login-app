@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  text-align: center;
+
+  .card {
+    box-shadow: 8px 5px 8px 5px #888888;
+    box-sizing: border-box;
+    border: thin solid #ccc;
+    flex: 1;
+    padding: 1rem;
+    margin: 1rem;
+  }
+}
